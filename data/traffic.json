@@ -1,0 +1,7 @@
+{
+  "jakarta-bekasi": { "macet": 1, "jalan_rusak": 11 },
+  "jakarta-depok": { "macet": 0.1, "jalan_rusak": 0.05 },
+  "depok-bekasi": { "macet": 0.15, "jalan_rusak": 0.1 },
+  "bogor-depok": { "macet": 0.25, "jalan_rusak": 0.15 },
+  "tangerang-bekasi": { "macet": 0.3, "jalan_rusak": 0.2 }
+}
