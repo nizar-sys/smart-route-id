@@ -6,6 +6,9 @@ from routes import cari_semua_rute
 def main():
     graph = load_graph()
     hambatan = load_hambatan()
+    
+    daftar_kota = [k.title() for k in graph.keys()]
+    print("Kota tersedia:", ", ".join(daftar_kota))
 
     start = input("Masukkan titik awal: ").lower()
     end = input("Masukkan titik tujuan: ").lower()
@@ -22,8 +25,7 @@ def main():
 
     top_rute = hasil_semua[:4]
 
-    print(
-        f"\nMenampilkan rute dari {start.title()} ke {end.title()}:\n")
+    print(f"\nMenampilkan rute dari {start.title()} ke {end.title()}:\n")
 
     rute_utama = top_rute[0]
     alternatif_lain = top_rute[1:4]
